@@ -71,4 +71,8 @@ contract MockStrategy {
     {
         return new address[](0);
     }
+
+    function removeAsset(address asset) public {
+        supportsAsset[asset] = false;
+    }
 }
